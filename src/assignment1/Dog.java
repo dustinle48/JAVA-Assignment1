@@ -16,35 +16,35 @@ public class Dog {
     private char sex;
     private boolean foundHome = false;
     
-    public Dog (int dogId, String name, double age, char sex) {
+    public Dog (int dogId, String name, double age, char sex, boolean foundHome) {
         this.dogId = dogId;
         this.name = name;
         this.age = age;
         this.sex = sex;
-        foundHome = false;
+        this.foundHome = foundHome;
     }
     
-    public int getId () {
+    public int getId() {
         return dogId;
     }
     
-    public String getName () {
+    public String getName() {
         return name;
     }
     
-    public double getAge () {
+    public double getAge() {
         return age;
     }
     
-    public char getSex () {
+    public char getSex() {
         return sex;
     }
     
-    public boolean getStatus () {
+    public boolean getStatus() {
         return foundHome;
     }
     
-    public String ViewAll () {
+    public String ViewAll() {
         return "Id: " + getId() + " Name: " + getName() + " Age: " + getAge() + " Sex: " + getSex() + " Found Home: " + getStatus();
     }
     
@@ -52,7 +52,7 @@ public class Dog {
         
     }*/
     
-    public void Update (boolean foundHome) {
-        this.foundHome = foundHome;
+    public void Update() {
+        this.foundHome = true;
     }
 }
